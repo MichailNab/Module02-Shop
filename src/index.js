@@ -21,6 +21,20 @@ var swiper = new Swiper(".offerSwiper", {
 		prevEl: ".swiper-button-prev",
 	},
 	modules: [Navigation, Pagination],
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 1
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 2
+		},
+		1000: {
+			slidesPerView: 3,
+			spaceBetween: 3
+		}
+	}
 });
 
 var swiper = new Swiper(".trendsSwiper", {
