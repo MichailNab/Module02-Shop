@@ -596,9 +596,8 @@ body {
 	}
 	&_max {
 		font-size: 1.6rem;
-		padding: 2.1rem 4rem;
+		padding: 2.1rem 5rem;
 		box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
-		margin-top: 2rem;
 		@media (max-width: $r_desk_1280) {
 			display: flex;
 			padding: 2.1rem auto;
@@ -795,7 +794,7 @@ body {
 	}
 	&__footer {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		gap: 1rem;
 		@media (max-width: $r_desk_1280) {
@@ -1656,6 +1655,7 @@ footer {
 		right: 55rem;
 		padding: 0 3rem;
 		z-index: 1;
+		transition: 0.5s;
 		@media (max-width: $r_desk_1350) {
 			right: 45rem;
 		}
@@ -1675,9 +1675,10 @@ footer {
 		height: 175px;
 		opacity: 0;
 		top: 26rem;
-		right: -12rem;
+		right: -6rem;
 		padding: 0 3rem;
 		z-index: 1;
+		transition: 0.5s;
 		@media (max-width: $r_desk_1500) {
 			right: 0;
 		}
@@ -1706,6 +1707,7 @@ footer {
 		right: 20rem;
 		padding: 0 3rem;
 		z-index: 1;
+		transition: 0.5s;
 		@media (max-width: $r_desk_1350) {
 			top: 73rem;
 		}
