@@ -36,12 +36,13 @@ body {
 	background-image: url(../images/background_all.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 .header {
 	max-width: 1440px;
 	margin: 0 auto 5rem;
-	padding: 4rem 52px 0 15px;
+	padding: 4rem 40px 0 40px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -617,16 +618,13 @@ body {
 }
 .slider {
 	overflow: hidden;
-	padding-top: 9.4rem;
+	padding-top: 3rem;
 	@media (max-width: $r_tab) {
-		max-width: 450px;
 		margin: 0 auto;
-		padding-top: 5.4rem;
-		padding-bottom: 6rem;
 	}
 	@media (max-width: $r_mob_500) {
 		max-width: 250px;
-		padding-bottom: 7rem;
+		padding-bottom: 3rem;
 	}
 	@media (max-width: $r_mob_360) {
 		max-width: 100%;
@@ -930,6 +928,9 @@ body {
 		}
 		@media (max-width: $r_desk_1120) {
 			margin-left: 4rem;
+		}
+		@media (max-width: $r_tab) {
+			margin-left: 0;
 		}
 	}
 	&__list {
@@ -1414,12 +1415,7 @@ footer {
 	}
 	&__info {
 		display: flex;
-		justify-content: space-between;
-		flex-basis: 66.5%;
-		margin-left: 2rem;
-		@media (max-width: $r_tab) {
-			margin-left: -1.5rem;
-		}
+		gap: 4rem;
 		@media (max-width: $r_mob_500) {
 			display: block;
 			text-align: center;
@@ -1430,7 +1426,6 @@ footer {
 		@media (max-width: $r_desk) {
 			display: block;
 			height: 4.8rem;
-			flex-basis: auto;
 			width: 18rem;
 			margin: 0 auto 3rem;
 		}
@@ -1442,7 +1437,7 @@ footer {
 		&_mob {
 			@media (max-width: $r_tab) {
 				display: flex;
-				justify-content: space-evenly;
+				justify-content: space-around;
 				margin-bottom: 4rem;
 			}
 		}
@@ -1475,7 +1470,7 @@ footer {
 		&_mob {
 			display: none;
 			@media (max-width: $r_tab) {
-				display: flex;			
+				display: flex;
 			}
 		}
 	}
@@ -1601,7 +1596,7 @@ footer {
 	position: absolute;
 	width: 273px;
 	top: 3.5rem;
-	right: -1.5rem;
+	right: 0;
 	display: flex;
 	opacity: 0;
 	z-index: 1;
