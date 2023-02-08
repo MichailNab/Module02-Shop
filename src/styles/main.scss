@@ -1415,7 +1415,7 @@ footer {
 	}
 	&__info {
 		display: flex;
-		gap: 4rem;
+		justify-content: space-between;
 		@media (max-width: $r_mob_500) {
 			display: block;
 			text-align: center;
