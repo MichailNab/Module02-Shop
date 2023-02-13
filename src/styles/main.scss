@@ -232,6 +232,7 @@ body {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	box-sizing: border-box;
 	@media (max-width: $r_tab) {
 		max-width: 600px;
 	}
@@ -1420,8 +1421,8 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		@media (max-width: $r_tab) {
-			justify-content: flex-start;
-			gap: 5%;
+			justify-content: center;
+			gap: 3rem;
 		}
 		@media (max-width: $r_mob_500) {
 			display: block;
@@ -1442,10 +1443,11 @@ footer {
 		padding-left: 0;
 		margin: 0;
 		&_mob {
+			display: none;
 			@media (max-width: $r_tab) {
 				display: flex;
 				justify-content: space-around;
-				margin-bottom: 4rem;
+				margin-bottom: 2rem;
 			}
 		}
 		@media (max-width: $r_mob_500) {
@@ -1475,7 +1477,6 @@ footer {
 			display: none;
 		}
 		&_mob {
-			display: none;
 			@media (max-width: $r_tab) {
 				display: flex;
 			}
@@ -1705,16 +1706,16 @@ footer {
 		width: 190px;
 		height: 175px;
 		opacity: 0;
-		top: 83rem;
-		right: 20rem;
+		top: 70rem;
+		right: 33rem;
 		padding: 0 3rem;
 		z-index: 1;
 		transition: 0.5s;
 		@media (max-width: $r_desk_1350) {
-			top: 73rem;
+			top: 60rem;
 		}
 		@media (max-width: $r_desk_hd) {
-			top: 68rem;
+			top: 50rem;
 		}
 		@media (max-width: $r_desk_1120) {
 			display: none;
