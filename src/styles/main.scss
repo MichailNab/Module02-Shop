@@ -600,7 +600,7 @@ body {
 		font-size: 1.6rem;
 		padding: 2.1rem 5rem;
 		box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
-		@media (max-width: $r_desk_1280) {
+		@media (max-width: $r_mob_500) {
 			display: flex;
 			padding: 2.1rem auto;
 		}
@@ -610,7 +610,7 @@ body {
 	padding-top: 2rem;
 	padding-bottom: 12.8rem;
 	@media (max-width: $r_tab) {
-		padding-bottom: 4rem;
+		padding-bottom: 3rem;
 	}
 	&__text {
 		margin-top: 6rem;
@@ -619,7 +619,8 @@ body {
 }
 .slider {
 	overflow: hidden;
-	padding-top: 3rem;
+	padding-top: 8rem;
+	padding-bottom: 6rem;
 	@media (max-width: $r_tab) {
 		margin: 0 auto;
 	}
@@ -1073,8 +1074,7 @@ body {
 		display: flex;
 		justify-content: center;
 		margin-top: 8.5rem;
-		margin-bottom: 5rem;
-
+		margin-bottom: 0;
 		@media (max-width: $r_tab) {
 			margin-top: 5rem;
 		}
@@ -1123,6 +1123,9 @@ body {
 	&__item1 {
 		flex-basis: 230px;
 		text-align: center;
+		@media (max-width: $r_tab) {
+			flex-basis: 210px;
+	}
 		@media (max-width: $r_mob_500) {
 			display: none;
 	}
@@ -1271,7 +1274,7 @@ body {
 				flex-basis: 520px;
 			}
 			@media (max-width: $r_tab_900) {
-				flex-basis: 500rem;
+				flex-basis: 500px;
 			}
 		}
 		&__wrap {
