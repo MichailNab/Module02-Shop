@@ -1072,7 +1072,6 @@ body {
 	}
 	&__list {
 		display: flex;
-		justify-content: center;
 		margin-top: 8.5rem;
 		margin-bottom: 0;
 		@media (max-width: $r_tab) {
@@ -1116,6 +1115,7 @@ body {
 .category {
 	list-style-type: none;
 	padding-left: 0;
+	padding-bottom: 2.5rem;
 	display: flex;
 	align-items: center;
 	gap: 2rem;
@@ -1156,7 +1156,16 @@ body {
 		}
 	}
 }
+.category-slider {
+	display: none;
+	@media (max-width: $r_mob_500) {
+		padding-top: 5rem;
+		padding-bottom: 2.5rem;
+		display: block;
+	}
+}
 .catalog-grid {
+	padding-top: 2.5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
