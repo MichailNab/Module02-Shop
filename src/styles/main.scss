@@ -591,18 +591,40 @@ body {
 		font-size: 1.4rem;
 		padding: 2rem 3.4rem;
 		box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
-		@media (max-width: $r_tab) {
+		@media (max-width: $r_desk_1350) {
+			padding: 1.8rem 2.8rem;
+		}
+		@media (max-width: $r_desk_1280) {
 			display: flex;
-			margin: 2.1rem auto;
+			padding: 1.8rem auto;
+			width: 18rem;
+			
+		}
+		@media (max-width: $r_tab) {
+			width: 80%;
+		}
+		@media (max-width: $r_mob_500) {
+			width: 100%;
 		}
 	}
 	&_max {
 		font-size: 1.6rem;
 		padding: 2.1rem 5rem;
 		box-shadow: 0px 1rem 1.1rem .17rem rgba(207, 92, 13, 0.15);
-		@media (max-width: $r_mob_500) {
+		@media (max-width: $r_desk_1350) {
+			padding: 2rem 3rem;
+		}
+		@media (max-width: $r_desk_1280) {
 			display: flex;
 			padding: 2.1rem auto;
+			margin: 0 5rem;
+			
+		}
+		@media (max-width: $r_tab) {
+			margin: 0 12rem;
+		}
+		@media (max-width: $r_mob_500) {
+			margin: 0 3rem;
 		}
 	}
 }
@@ -644,13 +666,16 @@ body {
 		position: relative;
 		z-index: 0;
 		transition: .3s;
+		@media (max-width: $r_desk_1280) {
+			padding: 2rem 1rem 2rem;
+		}
 		&_white {
 			height: 520px;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
 			background-size: contain;
-			padding: 4rem 3.7rem;
+			padding: 4rem 3.4rem;
 			@media (max-width: $r_desk_hd) {
 				height: 400px;
 			}
@@ -685,6 +710,9 @@ body {
 	}
 	&_milk {
 		background-image: url(../images/milk.png);
+		@media (max-width: $r_tab) {
+			background-position: center;
+		}
 	}
 	&_pasta {
 		background-image: url(../images/pasta.png);
@@ -697,6 +725,12 @@ body {
 		font-size: 3rem;
 		color: $green;
 		margin-bottom: 0;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+		}
+		@media (max-width: $r_desk_hd) {
+			font-size: 2.5rem;
+		}
 		@media (max-width: $r_mob_500) {
 			font-size: 1.75rem;
 			margin-top: 0;
@@ -711,14 +745,20 @@ body {
 		min-height: 55px;
 		max-width: 300px;
 		line-height: 1.5;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+			max-width: 100%;
+		}
 		@media (max-width: $r_mob_500) {
-			margin-top: 1rem;
 			font-size: 1.5rem;
 		}
 	}
 	&__price {
 		font-size: 2.4rem;
 		margin-bottom: 3rem;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+		}
 		@media (max-width: $r_mob_500) {
 			margin-top: 1rem;
 			margin-bottom: 1rem;
@@ -782,8 +822,11 @@ body {
 		width: 100%;
 		height: 322px;
 		text-align: center;
-		@media (max-width: $r_mob_500) {
-			height: 190px;
+		@media (max-width: $r_desk_hd) {
+			height: 250px;
+		}
+		@media (max-width: $r_tab_900) {
+			height: 180px;
 		}
 	}
 	&__image {
@@ -791,6 +834,12 @@ body {
 		max-width: 351px;
 		height: 100%;
 		object-fit: contain;
+		@media (max-width: $r_desk_hd) {
+			max-width: 280px;
+		}
+		@media (max-width: $r_tab_900) {
+			max-width: 180px;
+		}
 	}
 	&__footer {
 		display: flex;
@@ -802,12 +851,6 @@ body {
 		}
 	}
 }
-	&-pagination {
-		display: none;
-		@media (max-width: $r_tab) {
-			display: block;
-		}
-	}
 	&-button-next, &-button-prev {
 		top: -60px;
 		@media (max-width: $r_tab) {
@@ -831,7 +874,7 @@ body {
 		right: 72px;
 	}
 }
-.swiper-horizontal>.swiper-pagination-bullets {
+.swiper-horizontal>.swiper-pagination-bullets {	
 	bottom: -50px;
 	display: flex;
 	align-items: center;
@@ -842,8 +885,12 @@ body {
 	border: 1px solid $orange;
 }
 .swiper-pagination-bullet {
+	display: none;
 	width: 8px;
 	height: 8px;
+	@media (max-width: $r_tab) {
+		display: block;
+	}
 }
 .counter {
 	display: flex;
@@ -859,6 +906,7 @@ body {
 		&_min {
 			width: 40px;
 			height: 40px;
+			
 		}
 	}	
 	&__minus {
@@ -888,6 +936,7 @@ body {
 		display: none;
 	}
 }
+
 .about {
 	padding-top: 2rem;
 	padding-bottom: 19rem;
@@ -929,9 +978,9 @@ body {
 			margin-left: 8rem;
 		}
 		@media (max-width: $r_desk_1120) {
-			margin-left: 4rem;
+			margin-left: 2rem;
 		}
-		@media (max-width: $r_tab) {
+		@media (max-width: $r_desk) {
 			margin-left: 0;
 		}
 	}
@@ -1186,8 +1235,11 @@ body {
 		&:hover {
 			box-shadow: 0 0 0 2px rgba($green, 0.4) inset;
 		}
-		@media (max-width: $r_tab) {
+		@media (max-width: $r_desk_1500) {
 			padding: 2.2rem 2rem 2.8rem;
+		}
+		@media (max-width: $r_desk_1350) {
+			padding: 2.2rem 1rem 2.8rem;
 		}
 		@media (max-width: $r_mob_360) {
 			padding: 2.2rem 0.5rem 2.8rem;
@@ -1208,15 +1260,27 @@ body {
 		max-width: 205px;
 		height: 100%;
 		object-fit: contain;
+		@media (max-width: $r_desk_1500) {
+			max-width: 150px;
+		}
 	}
 	&__title {
 		font-family: $font-cormorant;
 		font-size: 3rem;
 		color: $green;
 		margin-bottom: 0;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+		}
 		@media (max-width: $r_tab) {
 			font-size: 2rem;
 		}
+		@media (max-width: $r_mob_500) {
+			font-size: 1.75rem;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		
 	}
 	&__description {
 		font-size: 1.6rem;
@@ -1226,16 +1290,27 @@ body {
 		min-height: 61px;
 		max-width: 300px;
 		line-height: 1.5;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+			max-width: 100%;
+		}
 		@media (max-width: $r_tab) {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 	}
 	&__price {
 		font-size: 2.4rem;
 		margin-bottom: 3rem;
 		margin-top: 0;
+		@media (max-width: $r_desk_1280) {
+			text-align: center;
+		}
 		@media (max-width: $r_tab) {
 			font-size: 2rem;
+		}
+		@media (max-width: $r_mob_500) {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 		}
 	}
 	&__footer {
@@ -1243,6 +1318,9 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		gap: 5%;
+		@media (max-width: $r_desk_1280) {
+			justify-content: center;
+		}
 	}
 }
 .contact {
@@ -1432,10 +1510,6 @@ footer {
 	&__info {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: $r_tab) {
-			justify-content: center;
-			gap: 3rem;
-		}
 		@media (max-width: $r_mob_500) {
 			display: block;
 			text-align: center;
@@ -1458,8 +1532,13 @@ footer {
 			display: none;
 			@media (max-width: $r_tab) {
 				display: flex;
-				justify-content: space-around;
+				justify-content: space-between;
 				margin-bottom: 2rem;
+			}
+		}
+		&_desk {
+			@media (max-width: $r_tab) {
+				display: none;
 			}
 		}
 		@media (max-width: $r_mob_500) {
