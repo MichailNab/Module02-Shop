@@ -42,7 +42,7 @@
 					<button class="header__cart" onclick="openPopup()">
 						<span class="header__counter">0</span>
 					</button>
-					<div class="popupcart" id="popupcart">
+					<div class="popupcart" id="popupCart">
 						<img class="popupbg" src="images/popupcart.png" alt="">
 						<img class="popupcart__img" src="images/catalog/milk.png" alt="">
 						<p class="popupcart__text">Вы добавили в корзину <br> <a href="" class="popupcart__link">Молоко
@@ -74,41 +74,41 @@
 						<img class="main__image" src="images/plate.png" alt="">
 					</div>
 					<div class="btnpopup">
-						<button class="main__btn main__btn_1" type="button" onclick="openPopupmain1()">
+						<button class="main__btn main__btn_1" type="button" onclick="openPopupMainTop()">
 							<span class="main__food">Авокадо</span> 134 руб
 						</button>
 						<div class="popupmain">
-							<div class="popupmain__avocado" id="popupmain1">
+							<div class="popupmain__avocado" id="popupMainTop">
 								<h3 class="popupmain_title">Авокадо</h3>
 								<p class="popupmain_text">Авокадо Сочный,<br>Свежий урожай, 1кг </p>
 								<span class="popupmain_price">134 руб</span>
-								<button class="popupmain_close" onclick="closePopupmain1()"></button>
+								<button class="popupmain_close" onclick="closePopupMainTop()"></button>
 							</div>
 						</div>
 					</div>
 					<div class="btnpopup">
-						<button class="main__btn main__btn_2" type="button" onclick="openPopupmain2()">
+						<button class="main__btn main__btn_2" type="button" onclick="openPopupMainRight()">
 							<span class="main__food">Картофель</span> 169 руб
 						</button>
 						<div class="popupmain">
-							<div class="popupmain__potato" id="popupmain2">
+							<div class="popupmain__potato" id="popupMainRight">
 								<h3 class="popupmain_title">Картофель</h3>
 								<p class="popupmain_text">Картофель Молодой,<br>Свежий урожай, 1кг </p>
 								<span class="popupmain_price">169 руб/кг</span>
-								<button class="popupmain_close" onclick="closePopupmain2()"></button>
+								<button class="popupmain_close" onclick="closePopupMainRight()"></button>
 							</div>
 						</div>
 					</div>
 					<div class="btnpopup">
-						<button class="main__btn main__btn_3" type="button" onclick="openPopupmain3()">
+						<button class="main__btn main__btn_3" type="button" onclick="openPopupMainBottom()">
 							<span class="main__food">Томаты</span> 215 руб
 						</button>
 						<div class="popupmain">
-							<div class="popupmain__tomato" id="popupmain3">
+							<div class="popupmain__tomato" id="popupMainBottom">
 								<h3 class="popupmain_title">Томаты</h3>
 								<p class="popupmain_text">Томаты спелые,<br>Свежий урожай, 1кг </p>
 								<span class="popupmain_price">215 руб</span>
-								<button class="popupmain_close" onclick="closePopupmain3()"></button>
+								<button class="popupmain_close" onclick="closePopupMainBottom()"></button>
 							</div>
 						</div>
 					</div>
@@ -623,37 +623,37 @@
 		// popupcart
 
 		function openPopup() {
-			document.getElementById("popupcart").style.opacity = "1";
+			document.getElementById("popupCart").style.opacity = "1";
 		}
 
 		function closePopup() {
-			document.getElementById("popupcart").style.opacity = "0";
+			document.getElementById("popupCart").style.opacity = "0";
 		}
 
 		//popupmain
 
-		function openPopupmain1() {
-			document.getElementById("popupmain1").style.opacity = "1";
+		function openPopupMainTop() {
+			document.getElementById("popupMainTop").style.opacity = "1";
 		}
 
-		function closePopupmain1() {
-			document.getElementById("popupmain1").style.opacity = "0";
+		function closePopupMainTop() {
+			document.getElementById("popupMainTop").style.opacity = "0";
 		}
 
-		function openPopupmain2() {
-			document.getElementById("popupmain2").style.opacity = "1";
+		function openPopupMainRight() {
+			document.getElementById("popupMainRight").style.opacity = "1";
 		}
 
-		function closePopupmain2() {
-			document.getElementById("popupmain2").style.opacity = "0";
+		function closePopupMainRight() {
+			document.getElementById("popupMainRight").style.opacity = "0";
 		}
 
-		function openPopupmain3() {
-			document.getElementById("popupmain3").style.opacity = "1";
+		function openPopupMainBottom() {
+			document.getElementById("popupMainBottom").style.opacity = "1";
 		}
 
-		function closePopupmain3() {
-			document.getElementById("popupmain3").style.opacity = "0";
+		function closePopupMainBottom() {
+			document.getElementById("popupMainBottom").style.opacity = "0";
 		}
 	</script>
 </body>
